@@ -1,0 +1,44 @@
+.ticker {
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--paper);
+  margin: 1.5rem 0 0;
+}
+
+.inner {
+  display: flex;
+  width: max-content;
+  animation: tick 28s linear infinite;
+}
+
+.half {
+  display: flex;
+  gap: 1.4rem;
+  padding: 0.65rem 0.7rem;
+  white-space: nowrap;
+}
+
+.half b {
+  margin-left: 1.4rem;
+  font-weight: 400;
+}
+.half span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.sparkle {
+  width: 0.75em;
+  height: 0.75em;
+  display: inline-block;
+  margin-left: 0.65rem;
+  vertical-align: -0.08em;
+  flex: 0 0 auto;
+}
+@keyframes tick {
+  to {
+    transform: translateX(-50%);
+  }
+}

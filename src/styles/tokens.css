@@ -1,0 +1,65 @@
+:root {
+  --paper: #f5f1e8;
+  --paper-2: #ede7d8;
+  --ink: #171310;
+  --muted: #6b6257;
+  --line: rgba(23, 19, 16, 0.16);
+  --moss: #1d4b3a;
+  --moss-deep: #143627;
+  --ochre: #a86f14;
+  --clay: #e3d9c2;
+  --card: #fbf9f3;
+  --dark: #111311;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Space Grotesk', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ---- Type scale (single source of truth) ---- */
+  --text-meta: 0.72rem; /* small metadata / mono labels */
+  --text-body: 1rem; /* comfortable body */
+  --text-body-lg: 1.125rem; /* lede / intro */
+  --text-card-title: 1.375rem; /* project titles */
+  --text-section: clamp(1.75rem, 3.5vw, 2.5rem); /* section headings */
+  --text-hero: clamp(2.75rem, 7vw, 5.5rem); /* hero heading */
+  --text-giant: clamp(2.5rem, 6vw, 4.5rem); /* contact giant */
+
+  /* ---- Spacing ---- */
+  --section-pad: clamp(3rem, 6vw, 5rem);
+  --card-pad: 1.25rem;
+  --card-gap: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: var(--text-meta);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
